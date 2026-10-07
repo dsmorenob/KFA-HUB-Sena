@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h1>Horarios y precios</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Clase</th>
+        <th scope="col">Días</th>
+        <th scope="col">Hora</th>
+        <th scope="col">Mensualidad</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <th scope="row">1</th>
+        <td>Clase 1</td>
+        <td>Lunes y miércoles</td>
+        <td>6:00 PM - 7:00 PM</td>
+        <td>$80.000</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Clase 2</td>
+        <td>Martes y jueves</td>
+        <td>6:00 PM - 7:00 PM</td>
+        <td>$80.000</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Clase 3</td>
+        <td>Sábados</td>
+        <td>9:00 AM - 11:00 AM</td>
+        <td>$60.000</td>
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

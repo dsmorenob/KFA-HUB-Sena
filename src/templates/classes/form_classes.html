@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Agenda una clase</h1>
+<form onsubmit="event.preventDefault();">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre completo</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label for="idType" class="form-label">Tipo de documento</label>
+      <select class="form-select" id="idType">
+        <option selected>Selecciona</option>
+        <option value="CC">CC</option>
+        <option value="TI">TI</option>
+        <option value="CE">CE</option>
+        <option value="PAS">PAS</option>
+      </select>
+    </div>
+    <div class="col-md-8 mb-3">
+      <label for="idNumber" class="form-label">Número de documento</label>
+      <input type="text" class="form-control" id="idNumber" placeholder="11122333">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="phone" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" id="phone">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-3">
+      <label for="classType" class="form-label">Clase</label>
+      <select class="form-select" id="classType">
+        <option selected>Selecciona</option>
+        <option>Clase 1</option>
+        <option>Clase 2</option>
+        <option>Clase 3</option>
+      </select>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="classDate" class="form-label">Fecha</label>
+      <input type="date" class="form-control" id="classDate">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="classTime" class="form-label">Hora</label>
+      <input type="time" class="form-control" id="classTime">
+    </div>
+  </div>
+  <div class="mb-3">
+    <label for="notes" class="form-label">Observaciones</label>
+    <textarea class="form-control" id="notes" rows="3"></textarea>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="contactEmail">
+    <label class="form-check-label" for="contactEmail">¿Deseas ser contactado por correo?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Agendar clase</button>
+</form>
+{% endblock %}

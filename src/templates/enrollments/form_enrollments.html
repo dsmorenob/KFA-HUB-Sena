@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>Nueva inscripción</h1>
+<p class="text-secondary">Completa tus datos para unirte al club.</p>
+<form onsubmit="event.preventDefault();">
+  <h5 class="text-danger">Tus datos</h5>
+  <div class="mb-3">
+    <label for="idType" class="form-label">Tipo de documento</label>
+    <select class="form-select" id="idType">
+      <option selected>Selecciona...</option>
+      <option value="CC">CC</option>
+      <option value="TI">TI</option>
+      <option value="CE">CE</option>
+      <option value="PAS">PAS</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="idNumber" class="form-label">Número de documento</label>
+    <input type="text" class="form-control" id="idNumber">
+  </div>
+  <div class="mb-3">
+    <label for="firstName" class="form-label">Nombres</label>
+    <input type="text" class="form-control" id="firstName">
+  </div>
+  <div class="mb-3">
+    <label for="lastName" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="lastName">
+  </div>
+  <div class="mb-3">
+    <label for="age" class="form-label">Edad</label>
+    <input type="number" class="form-control" id="age">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label">Número de teléfono</label>
+    <input type="tel" class="form-control" id="phone" placeholder="Ej. 3001234567">
+    <div class="form-text">Móvil o fijo a 10 dígitos, solo números.</div>
+  </div>
+
+  <h5 class="text-danger">Mis planes</h5>
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="plan1">
+      <label class="form-check-label" for="plan1">Plan 1</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="plan2">
+      <label class="form-check-label" for="plan2">Plan 2</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="plan3">
+      <label class="form-check-label" for="plan3">Plan 3</label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Inscribirme</button>
+</form>
+{% endblock %}
