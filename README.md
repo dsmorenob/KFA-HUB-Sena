@@ -22,7 +22,7 @@ gas/                        # versión para Google Apps Script
 
 ## Versión en línea (Google Apps Script)
 
-Instructor, la carpeta `gas/` contiene la misma interfaz en una sola página, publicada con Google Apps Script para poder abrirla desde cualquier dispositivo, sin instalar nada, de este modo puedo hacer pruebas con amigos:
+Instructor, la carpeta `gas/` contiene la misma interfaz en una sola página, publicada con Google Apps Script para poder abrirla desde cualquier dispositivo y navegador, sin instalar nada, de este modo puedo hacer pruebas con amigos. En caso de querer probar y que no le abra normal, use el modo incognito del navegador, ya que en ocasiones da error (cuando se abre en modo normal) debido a que se tienen varias sesiones iniciadas de Google.
 
 https://script.google.com/macros/s/AKfycbxgiR6ujRXCNQ26jM9taZoqAQfTDHk8gYMHCtTLF30QHjBmXh_ShR4Pr3uBxc692vkxjQ/exec
 
